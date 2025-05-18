@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>✓ My To-Do List</h1>
+        <p>Stay organized and productive</p>
+      </div>
+
+      <div class="input-section">
+        <input
+          type="text"
+          class="task-input"
+          id="taskInput"
+          placeholder="What needs to be done?"
+          maxlength="100"
+        />
+        <button class="add-btn" id="addBtn">Add Task</button>
+      </div>
+
+      <div class="tasks-stats">
+        <div class="stat">
+          <div class="stat-number" id="totalTasks">0</div>
+          <div class="stat-label">Total</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" id="completedTasks">0</div>
+          <div class="stat-label">Completed</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" id="remainingTasks">0</div>
+          <div class="stat-label">Remaining</div>
+        </div>
+      </div>
+
+      <div class="tasks-container" id="tasksContainer">
+        <div class="no-tasks" id="noTasks">No tasks yet. Add one above!</div>
+      </div>
+
+      <button class="clear-all-btn" id="clearAllBtn" disabled>
+        Clear All Tasks
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
